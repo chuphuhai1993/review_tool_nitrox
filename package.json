@@ -1,0 +1,36 @@
+{
+  "name": "app-reviews-scraper-nextjs",
+  "version": "1.0.0",
+  "description": "A Next.js web app to scrape Google Play Store and iOS App Store reviews",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "legacy:android": "node scraper.js",
+    "legacy:ios": "node scraper-ios.js"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "google-play",
+    "app-store",
+    "reviews",
+    "scraper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "google-play-scraper": "^9.1.3",
+    "app-store-scraper": "^0.18.0",
+    "next": "14.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8",
+    "eslint-config-next": "14.2.4"
+  }
+}
